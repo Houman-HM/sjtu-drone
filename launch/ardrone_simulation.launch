@@ -1,0 +1,10 @@
+<launch>
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch" >
+			<arg name="paused" value="false"/>
+			<arg name="verbose" value="True"/>
+	</include>
+	
+	<node name="spawn_robot" pkg= "sjtu_drone" type="spawn_drone"/>
+   
+</launch>
