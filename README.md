@@ -19,5 +19,5 @@ Here <catkin_ws> is the path of the catkin workspace. Please refer to the [tutor
 ```
 $ cd <your_workspace>
 $ source devel/setup.bash
-$ roslaunch sjtu_drone simple.launch
+$ roslaunch sjtu_drone ardrone_simulation.launch
 ```
