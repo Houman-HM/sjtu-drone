@@ -17,9 +17,9 @@ $ catkin build
 
 Here <catkin_ws> is the path of the catkin workspace. Please refer to the [tutorial](http://wiki.ros.org/ROS/Tutorials) about how to create a catkin workspace in ROS.
 
-# Run
+# Launching the simulation
 ```
-$ cd <where you check out the code>
+$ cd <your_workspace>
 $ source devel/setup.bash
 $ roslaunch sjtu_drone simple.launch
 ```
