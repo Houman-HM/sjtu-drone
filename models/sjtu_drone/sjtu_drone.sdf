@@ -124,10 +124,10 @@
 	<pose> 0.2 0.0 0.0 0 0 0 </pose>
         <always_on>1</always_on>
         <update_rate>60</update_rate>
-        <visualize>true</visualize>
 	<plugin name='front_camera' filename='libplugin_ros_cam.so'>
-	<imageTopicName>/drone/front_camera/image_raw</imageTopicName>
-	</plugin> 
+<imageTopicName>image_raw</imageTopicName>
+    <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+    <frameName>camera_link</frameName>	</plugin> 
       </sensor>
 
 	<!-- downward looking camera -->
@@ -152,7 +152,6 @@
 	<pose> 0.0 0.0 0.0 0 1.570796326794897 0 </pose>
         <always_on>1</always_on>
         <update_rate>15</update_rate>
-        <visualize>true</visualize>
 	<plugin name='down_camera' filename='libplugin_ros_cam.so'>
 	<imageTopicName>/drone/down_camera/image_raw</imageTopicName>
 	</plugin> 
@@ -160,6 +159,6 @@
 
 
 
-     </link> 
+     </link>
 </model>
 </sdf>
