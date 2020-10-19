@@ -1,0 +1,13 @@
+material ar_tag_material{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                MarkerData_2020.png
+                scale 1 1
+            }
+        }   
+    }
+}
