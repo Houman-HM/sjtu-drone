@@ -2,10 +2,12 @@
 
 	<include file="$(find gazebo_ros)/launch/empty_world.launch" >
 		<arg name="paused" value="false"/>
-		<arg name="world_name" value="$(find sjtu_drone)/worlds/ar_tag.world"/>
+		<!-- <arg name="world_name" value="$(find sjtu_drone)/worlds/ar_tag.world"/> -->
 	</include>
 	
 	<include file="$(find gazebo2rviz)/launch/gazebo2rviz.launch" >
+	</include>
+	<include file="$(find sjtu_drone)/launch/ar_tracking_sim.launch" >
 	</include>
 	<node name="spawn_robot_1" pkg= "sjtu_drone" type="spawn_drone"/>
 
